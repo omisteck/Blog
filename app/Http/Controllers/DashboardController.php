@@ -9,6 +9,9 @@ class DashboardController extends Controller
 {
     use HandleResponse;
 
+    /**
+     * @return \Inertia\Response
+     */
     public function dashboard()
     {
         $limit = config('app.pagination');

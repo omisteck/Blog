@@ -12,10 +12,16 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     use HandleResponse;
-    
+
+    /**
+     * @var PostService
+     */
     protected PostService $postSerive;
 
-    public function __construct( PostService $postSerive )
+    /**
+     * @param PostService $postSerive
+     */
+    public function __construct(PostService $postSerive )
     {
         $this->postSerive = $postSerive;
     }

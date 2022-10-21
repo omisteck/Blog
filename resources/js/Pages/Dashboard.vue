@@ -34,7 +34,7 @@ defineProps({
                             <h2 class="text-3xl font-bold leading-9">
                                 {{ post.title }}
                             </h2>
-                            <p class="mb-3">{{ post.description }}</p>
+                            <p class="mb-3" v-html="post.description"></p>
                             <span class="bg-gray-100 p-2 text-[12px] rounded-lg mt-3 mr-5"><span
                                     class="font-bold">Published Date:
                                     {{
